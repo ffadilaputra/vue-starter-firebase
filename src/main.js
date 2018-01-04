@@ -5,20 +5,10 @@ import VueFire from 'vuefire'
 import App from './App'
 import router from './router'
 import { firebase } from '@firebase/app';
+import { config } from './config'
 
 Vue.use(VueFire)
 Vue.config.productionTip = false
-
-let config = {
-  apiKey: 'AIzaSyDE312DcOcetMW7IA0VUoNdTaAbOL3r4Kg',
-  authDomain: 'belajar-vue-firebase.firebaseapp.com',
-  databaseURL: 'https://belajar-vue-firebase.firebaseio.com',
-  projectId: 'belajar-vue-firebase',
-  storageBucket: 'belajar-vue-firebase.appspot.com',
-  messagingSenderId: '624078079068'
-}
-
-  firebase.initializeApp(config)
 
 /* eslint-disable no-new */
 new Vue({
